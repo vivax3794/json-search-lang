@@ -36,3 +36,26 @@ player/hp
 10
 ```
 
+## Multiple Values from different paths
+**Json:**
+```json
+{
+	"players": [
+		{"name": "vivax", "score": 100},
+		{"name": "github", "score": 200}
+	]
+}
+```
+
+**Search String:**
+```
+players/*/score
+```
+
+**output:**
+```
+[
+	100,
+	200
+]
+```
